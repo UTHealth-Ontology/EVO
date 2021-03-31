@@ -1,2 +1,2 @@
-# EVO
-Elements of Visuals Ontology (EVO)
+# Elements of Visuals Ontology (EVO)
+
