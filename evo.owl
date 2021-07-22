@@ -2062,6 +2062,9 @@
         <Class IRI="#PowderBlueWeb"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Preceived_Visual_Texture"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#PrincetonOrange"/>
     </Declaration>
     <Declaration>
@@ -2240,6 +2243,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#RosyBrown"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rough_Texture"/>
     </Declaration>
     <Declaration>
         <Class IRI="#RoundLineCap"/>
@@ -2432,6 +2438,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#SmokyBlack"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Smooth_Texture"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Snow"/>
@@ -2864,6 +2873,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#hasStrokeColor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVisualTexture"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isComposedOfColors"/>
@@ -7914,16 +7926,6 @@
     <SubClassOf>
         <Class IRI="#Curved_Line"/>
         <Class IRI="#Line"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Curved_Line"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Curved_Line"/>
-            <DataHasValue>
-                <DataProperty IRI="#hasNumberOfLines"/>
-                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">1</Literal>
-            </DataHasValue>
-        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Curved_Lines_Doubled"/>
@@ -20773,6 +20775,10 @@
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Rough_Texture"/>
+        <Class IRI="#Preceived_Visual_Texture"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#RoundLineCap"/>
         <Class IRI="#StrokeLineCap"/>
     </SubClassOf>
@@ -22241,6 +22247,10 @@
                 <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">16</Literal>
             </DataHasValue>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Smooth_Texture"/>
+        <Class IRI="#Preceived_Visual_Texture"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Snow"/>
@@ -25286,9 +25296,6 @@
         <ObjectProperty IRI="#hasQualitativeSize"/>
     </FunctionalObjectProperty>
     <FunctionalObjectProperty>
-        <ObjectProperty IRI="#hasShape"/>
-    </FunctionalObjectProperty>
-    <FunctionalObjectProperty>
         <ObjectProperty IRI="#hasSpatialPattern"/>
     </FunctionalObjectProperty>
     <SymmetricObjectProperty>
@@ -25396,6 +25403,10 @@
         <ObjectProperty IRI="#hasStrokeColor"/>
         <Class IRI="#Stroke"/>
     </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVisualTexture"/>
+        <Class IRI="#Shape"/>
+    </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasCategoryWidth"/>
         <Class IRI="#WidthCategory"/>
@@ -25447,6 +25458,10 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasStrokeColor"/>
         <Class IRI="#Color"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVisualTexture"/>
+        <Class IRI="#Preceived_Visual_Texture"/>
     </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#blue-percentage"/>
