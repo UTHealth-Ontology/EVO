@@ -2866,9 +2866,6 @@
         <ObjectProperty IRI="#hasSpatialPattern"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#hasStroke"/>
     </Declaration>
     <Declaration>
@@ -2879,6 +2876,9 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#isComposedOfColors"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#spatial"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#spatial_contains"/>
@@ -25250,43 +25250,43 @@
     </EquivalentObjectProperties>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_contains"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_covered_by"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_covers"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_crosses"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_disjoint"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_equals"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_inside"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_intersects"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_meets"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#spatial_overlaps"/>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
+        <ObjectProperty IRI="#spatial"/>
     </SubObjectPropertyOf>
     <InverseObjectProperties>
         <ObjectProperty IRI="#hasMultipleColors"/>
@@ -25392,10 +25392,6 @@
         <Class IRI="#Pattern"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
-        <Class IRI="#Shape"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#hasStroke"/>
         <Class IRI="#Shape"/>
     </ObjectPropertyDomain>
@@ -25446,10 +25442,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasSpatialPattern"/>
         <Class IRI="#Spatial_Pattern"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#hasSpatialRelationship"/>
-        <Class IRI="#Shape"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#hasStroke"/>
@@ -30054,7 +30046,7 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty IRI="http://purl.org/dc/elements/1.1/description"/>
-        <IRI>#hasSpatialRelationship</IRI>
+        <IRI>#spatial</IRI>
         <Literal>uses Dimensionally Extended 9-Intersection Model (DE-9IM) to define spatial predicates between shapes contained in a pattern</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
